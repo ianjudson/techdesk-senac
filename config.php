@@ -1,0 +1,19 @@
+<?php
+
+    //variáveis de conexão
+    $host = "localhost";
+    $banco = "techdesk";
+    $usuario = "root";
+    $senha = "root";
+
+    //tenta se conectar ao banco
+    try {
+        $pdo = new PDO(
+            "mysql:host=$host;dbname=$banco",
+            $usuario,
+            $senha
+        );
+    } catch (PDOException $erro){
+        die("Erro ao conectar com o banco: " . $erro);
+    }
+?>
