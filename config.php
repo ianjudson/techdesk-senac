@@ -4,7 +4,7 @@
     $host = "localhost";
     $banco = "techdesk";
     $usuario = "root";
-    $senha = "root";
+    $senha = "123456"; //snc = 123456 //hme = root
 
     //tenta se conectar ao banco
     try {
